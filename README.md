@@ -35,36 +35,27 @@ The dataset consists of reviews scraped from the Google Play Store for the WebEx
    ```bash
    git clone https://github.com/your_username/WebEx-Sentiment-Analysis.git
    cd WebEx-Sentiment-Analysis
-
 2. Install dependencies:
-
-pip install -r requirements.txt
-
+   ```bash
+   pip install -r requirements.txt
 
 3. Run the Jupyter notebook:
+   ```bash
+   jupyter notebook webex_sentiment_analysis.ipynb
 
-jupyter notebook webex_sentiment_analysis.ipynb
 
-
-
-Results
-
+## Results
 Sentiment classification accuracy: [Insert accuracy metric]
-
 Visualizations of word clouds, confusion matrices, and sentiment distributions are available in the results/ folder.
 
 
-Challenges and Future Work
-
+## Challenges and Future Work
 Challenges include handling noisy data and achieving better accuracy for complex reviews.
-
 Future work involves experimenting with deep learning techniques like LSTMs or BERT for improved results.
 
 
-License
-
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
-
+## Contact
 For any inquiries or feedback, feel free to contact me at [nikos.tsopanidis746@gmail.com].
