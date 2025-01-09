@@ -39,7 +39,7 @@ The dataset includes Baldur's Gate 3 reviews scraped from Steam. Reviews are lab
 ## Results
 - **Best-Performing Model**: SVM with TF-IDF features
   - **Accuracy**: 90%
-  - **AUC-ROC**: 97%
+  - **AUC-ROC**: 0.97
 - **Deep Learning Performance**: CNN showed comparable results with faster training times.
 - Visualizations and metrics can be found in the `/results/` folder:
   - Confusion matrices, ROC curves, and evaluation metrics for all models.
