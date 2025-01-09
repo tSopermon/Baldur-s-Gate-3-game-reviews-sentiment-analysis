@@ -1,55 +1,61 @@
-# Baldur's Gate 3 Sentiment Analysis
-
-## Description
-This project analyzes 309,103 English reviews of **Baldur's Gate 3** from Steam to classify sentiments as positive or negative. Using Machine Learning (ML) and Deep Learning (DL) models, we uncover insights into user feedback about the game.
+# NLP-Sentiment-Analysis-Project
 
 ## Project Overview
-- **Dataset**: Reviews were collected via Steam's API, focusing on "review" and "voted_up" columns.
-- **Preprocessing**: Data was cleaned, tokenized, lemmatized, and prepared for analysis.
-- **Feature Extraction**: Bag of Words and TF-IDF methods were used.
-- **Models**:
-  - Machine Learning: Logistic Regression, SGD Classifier, Multinomial Naïve Bayes.
-  - Deep Learning: Simple RNN, LSTM, CNN.
-- **Evaluation**: Models were compared based on accuracy, F1 score, AUC-ROC, and computational efficiency.
+This project focuses on performing sentiment analysis on Baldur's Gate 3 Steam reviews. Using machine learning and deep learning models, we classify reviews as positive or negative based on user feedback. The project involves preprocessing, feature extraction, exploratory data analysis, and training/testing multiple models to evaluate their effectiveness.
 
 ## Repository Structure
-- **`data/`**: Contains raw and cleaned datasets.
-- **`notebooks/`**: Jupyter notebooks for preprocessing, EDA, and model training.
-- **`scripts/`**: Python scripts for automating tasks like scraping, preprocessing, and model training.
-- **`results/`**: Metrics, visualizations, and analysis results.
-- **`requirements.txt`**: Dependencies for running the project.
-- **`LICENSE`**: Licensing information.
+- **`/data/`**:
+  - `BG3_reviews_resampled.csv`: Preprocessed and balanced dataset used for training and evaluation.
+- **`/docs/`**:
+  - `report.pdf`: The detailed project report, including methodology, results, and analysis.
+- **`/notebooks/`**:
+  - `ml_model_training.ipynb`: Notebook for training machine learning models.
+  - `dl_model_training.ipynb`: Notebook for training deep learning models.
+- **`/results/`**:
+  - **`confusion_matrices/`**: Contains confusion matrix visualizations for each model.
+  - **`reviews_length_distributions/`**: Distribution plots of review lengths for different data forms.
+  - **`roc_curves/`**: ROC curve plots for each model.
+  - **`training_history_visualizations_for_dl/`**: Visualizations of training history (accuracy and loss) for deep learning models.
+  - **`word_clouds/`**: Word clouds for positive and negative reviews.
+  - `evaluation_metrics.csv`: Consolidated evaluation metrics for all models.
 
 ## Dataset
-The dataset was sourced from the [Baldur's Gate 3 Steam Reviews Kaggle dataset](https://www.kaggle.com/datasets/harisyafie/baldurs-gate-3-steam-reviews). Reviews include user feedback, recommendation status, and metadata.
+The dataset includes Baldur's Gate 3 reviews scraped from Steam. Reviews are labeled as positive or negative based on user recommendations. The dataset was preprocessed and resampled to address class imbalance.
 
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/BG3_Sentiment_Analysis.git
-   cd BG3_Sentiment_Analysis
+   git clone https://github.com/your_username/NLP-Sentiment-Analysis-Project.git
+   cd NLP-Sentiment-Analysis-Project
+   ```
 2. Install dependencies:
-  ```bash
+   ```bash
    pip install -r requirements.txt
-  ```
-3. Run Jupyter notebooks:
-  - Start with `notebooks/preprocessing.ipynb` to clean the data.
-  - Use `notebooks/eda.ipynb` for exploratory data analysis.
-  - Train ML models using `notebooks/ml_model_training.ipynb`.
-  - Train DL models using `notebooks/dl_model_training.ipynb`.
+   ```
+3. Run the notebooks:
+   - Use `ml_model_training.ipynb` for machine learning models.
+   - Use `dl_model_training.ipynb` for deep learning models.
 
 ## Results
-- **Top-performing model**: SGD Classifier (accuracy: 90%, AUC-ROC: 0.97).
-- **Deep learning**: CNN performed best (accuracy: 90%, AUC-ROC: 0.94).
-- **Visualizations**: Word clouds, confusion matrices, and ROC curves available in `results/`.
+- **Best-Performing Model**: SVM with TF-IDF features
+  - **Accuracy**: 90%
+  - **AUC-ROC**: 0.97
+- **Deep Learning Performance**: CNN showed comparable results with faster training times.
+- Visualizations and metrics can be found in the `/results/` folder:
+  - Confusion matrices, ROC curves, and evaluation metrics for all models.
+
+## Report
+For a detailed explanation of the methodology, results, and insights, refer to the [project report](docs/report.pdf).
 
 ## Future Work
-- Optimize ML models with hyperparameter tuning.
-- Experiment with pretrained models like BERT for improved accuracy.
-- Address overfitting in DL models by increasing dataset size and regularization.
+- Explore advanced deep learning models like BERT.
+- Perform hyperparameter tuning for machine learning models.
+- Expand the dataset with reviews from other platforms.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
-For inquiries, contact: [nikos.tsopanidis746@gmail.com].
+For questions or feedback, please contact:
+- **Author**: Nikolaos Theokritos Tsopanidis
+- **Email**: nikos.tsopanidis746@gmail.com
