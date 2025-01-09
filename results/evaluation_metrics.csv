@@ -1,0 +1,28 @@
+Model,Precision,Recall,F1-Score,Accuracy
+LogReg (BoW),0.9,0.89,0.89,0.89
+LogReg (TF-IDF),0.88,0.88,0.88,0.88
+"LogReg (BoW, no stopwords)",0.89,0.89,0.89,0.89
+"LogReg (TF-IDF, no stopwords)",0.88,0.88,0.88,0.88
+"LogReg (BoW, lemmatized)",0.89,0.89,0.89,0.89
+"LogReg (TF-IDF, lemmatized)",0.88,0.88,0.88,0.88
+SVM (BoW),0.89,0.89,0.89,0.89
+SVM (TF-IDF),0.91,0.9,0.9,0.9
+"SVM (BoW, no stopwords)",0.89,0.89,0.89,0.89
+"SVM (TF-IDF, no stopwords)",0.9,0.9,0.9,0.9
+"SVM (BoW, lemmatized)",0.89,0.89,0.89,0.89
+"SVM (TF-IDF, lemmatized)",0.9,0.9,0.9,0.9
+MNB (BoW),0.82,0.75,0.74,0.75
+MNB (TF-IDF),0.83,0.76,0.75,0.76
+"MNB (BoW, no stopwords)",0.81,0.73,0.71,0.73
+"MNB (TF-IDF, no stopwords)",0.85,0.8,0.8,0.8
+"MNB (BoW, lemmatized)",0.82,0.75,0.73,0.75
+"MNB (TF-IDF, lemmatized)",0.84,0.8,0.79,0.8
+RNN,0.84,0.84,0.84,0.84
+RNN (no stopwords),0.77,0.77,0.77,0.77
+RNN (lemmatized),0.86,0.86,0.86,0.86
+LSTM,0.89,0.88,0.88,0.88
+LSTM (no stopwords),0.87,0.87,0.87,0.87
+LSTM (lemmatized),0.88,0.87,0.87,0.87
+CNN,0.88,0.88,0.88,0.88
+CNN (no stopwords),0.86,0.86,0.86,0.86
+CNN (lemmatized),0.86,0.86,0.86,0.86
