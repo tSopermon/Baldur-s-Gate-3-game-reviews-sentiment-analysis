@@ -45,7 +45,7 @@ The dataset includes Baldur's Gate 3 reviews scraped from Steam. Reviews are lab
   - Confusion matrices, ROC curves, and evaluation metrics for all models.
 
 ## Report
-For a detailed explanation of the methodology, results, and insights, refer to the [project report](docs/report.pdf).
+For a detailed explanation of the methodology, results, and insights, refer to the [project report](docs/project_report.pdf).
 
 ## Future Work
 - Explore advanced deep learning models like BERT.
