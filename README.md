@@ -25,8 +25,8 @@ The dataset includes Baldur's Gate 3 reviews scraped from Steam. Reviews are lab
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/tSopermon/NLP-Sentiment-Analysis-Project.git
-   cd NLP-Sentiment-Analysis-Project
+   git clone https://github.com/tSopermon/Baldur-s-Gate-3-game-reviews-sentiment-analysis.git
+   cd Baldur-s-Gate-3-game-reviews-sentiment-analysis
    ```
 2. Install dependencies:
    ```bash
